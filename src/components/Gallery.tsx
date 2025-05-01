@@ -32,9 +32,9 @@ const Gallery: React.FC = () => {
   return (
     <section className="py-24 bg-white">
       <div className="container mx-auto px-4 md:px-8">
-        <div className="grid grid-cols-12 gap-6">
+        <div className="grid grid-cols-12 gap-2">
           {/* Large image */}
-          <div className="col-span-12 md:col-span-8 h-[600px]">
+          <div className="col-span-12 md:col-span-8 h-[300px] md:h-[600px]">
             <img
               src={images[0].url}
               alt={images[0].alt}
@@ -43,7 +43,7 @@ const Gallery: React.FC = () => {
           </div>
           
           {/* Two medium images */}
-          <div className="col-span-12 md:col-span-4 grid grid-rows-2 gap-6 h-[600px]">
+          <div className="col-span-12 md:col-span-4 grid grid-rows-2 gap-2 h-[300px] md:h-[600px]">
             {images.slice(1, 3).map((image) => (
               <div key={image.id} className="h-full">
                 <img
@@ -56,14 +56,14 @@ const Gallery: React.FC = () => {
           </div>
           
           {/* Two bottom images */}
-          <div className="col-span-12 md:col-span-6 h-[400px]">
+          <div className="col-span-6 h-[200px] md:h-[400px]">
             <img
               src={images[3].url}
               alt={images[3].alt}
               className="w-full h-full object-cover rounded-lg shadow-lg"
             />
           </div>
-          <div className="col-span-12 md:col-span-6 h-[400px]">
+          <div className="col-span-6 h-[200px] md:h-[400px]">
             <img
               src={images[4].url}
               alt={images[4].alt}
