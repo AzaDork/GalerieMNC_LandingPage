@@ -31,7 +31,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           <a href="/" className="h-12">
             <img 
-              src="/GalerieMNC_logo.png" 
+              src="/GalerieMNC_LandingPage/GalerieMNC_logo.png" 
               alt="Galerie MNC" 
               className="h-full w-auto"
             />
