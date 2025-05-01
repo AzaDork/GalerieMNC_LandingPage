@@ -5,14 +5,20 @@ import logo from '/GalerieMNC_logo.png';
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [headerBg, setHeaderBg] = useState('bg-transparent');
 
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
+      const maxScroll = 200;
+      const scrollProgress = Math.min(1, offset / maxScroll);
+      
       if (offset > 50) {
         setScrolled(true);
+        setHeaderBg(`rgb(255 255 255 / ${scrollProgress})`);
       } else {
         setScrolled(false);
+        setHeaderBg('transparent');
       }
     };
 
@@ -25,8 +31,9 @@ const Header: React.FC = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled ? 'bg-white shadow-md py-3' : 'bg-transparent py-6'
+        scrolled ? 'shadow-md py-3' : 'py-6'
       }`}
+      style={{ backgroundColor: headerBg }}
     >
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between">
