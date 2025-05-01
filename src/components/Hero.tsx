@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import vitrine from '/GalerieMNC_vitrine.jpeg';
 
 const Hero: React.FC = () => {
   const [opacity, setOpacity] = useState(30);
@@ -24,7 +25,7 @@ const Hero: React.FC = () => {
           style={{ opacity: opacity / 100 }}
         />
         <img
-          src="/GalerieMNC_vitrine.jpg"
+          src={vitrine}
           alt="Galerie MNC Storefront"
           className="w-full h-full object-cover"
         />
