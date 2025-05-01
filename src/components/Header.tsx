@@ -30,11 +30,11 @@ const Header: React.FC = () => {
     >
       <div className="container mx-auto px-4 md:px-8">
         <div className="flex items-center justify-between">
-          <a href="/" className="flex items-center h-full">
+          <a href="/" className="flex items-center h-20">
             <img 
               src={logo}
               alt="Galerie MNC" 
-              className="h-full w-auto"
+              className="h-full w-auto object-contain"
             />
           </a>
 
