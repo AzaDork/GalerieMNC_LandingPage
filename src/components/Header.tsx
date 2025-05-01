@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Instagram, Facebook } from 'lucide-react';
+import logo from '/GalerieMNC_logo.png';
 
 const Header: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ const Header: React.FC = () => {
         <div className="flex items-center justify-between">
           <a href="/" className="h-12">
             <img 
-              src="/GalerieMNC_LandingPage/GalerieMNC_logo.png" 
+              src={logo}
               alt="Galerie MNC" 
               className="h-full w-auto"
             />

@@ -1,4 +1,5 @@
 import React from 'react';
+import vitrine from '/GalerieMNC_vitrine.jpeg';
 
 const Hero: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0">
         <div className="absolute inset-0 bg-black bg-opacity-30 z-10" />
         <img
-          src="/GalerieMNC_LandingPage/GalerieMNC_vitrine.jpeg"
+          src={vitrine}
           alt="Galerie MNC Storefront"
           className="w-full h-full object-cover"
         />
