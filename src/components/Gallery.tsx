@@ -39,6 +39,7 @@ const Gallery: React.FC = () => {
               src={images[0].url}
               alt={images[0].alt}
               className="w-full h-full object-cover rounded-lg shadow-lg"
+              loading="lazy"
             />
           </div>
           
@@ -50,6 +51,7 @@ const Gallery: React.FC = () => {
                   src={image.url}
                   alt={image.alt}
                   className="w-full h-full object-cover rounded-lg shadow-lg"
+                  loading="lazy"
                 />
               </div>
             ))}
@@ -61,6 +63,7 @@ const Gallery: React.FC = () => {
               src={images[3].url}
               alt={images[3].alt}
               className="w-full h-full object-cover rounded-lg shadow-lg"
+              loading="lazy"
             />
           </div>
           <div className="col-span-6 h-[200px] md:h-[400px]">
@@ -68,6 +71,7 @@ const Gallery: React.FC = () => {
               src={images[4].url}
               alt={images[4].alt}
               className="w-full h-full object-cover rounded-lg shadow-lg"
+              loading="lazy"
             />
           </div>
         </div>
